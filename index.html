@@ -13,12 +13,11 @@
 let cookies = 0
   
 function clickcookie() {
-    cookies += 1;
+  cookies += 1;
+  document.getElementById("cookieclicks").innerHTML = "Clicks: " + cookies.toString();
 }
   
 <p style="text-align:center;font-size:20px" id="cookieclicks">Clicks: 0</p>
-  
-document.getElementById("cookieclicks").innerHTML = "Clicks: " + cookies.toString();
   
 <a href="mailto:someone@example.com">Send Email</a>
   
