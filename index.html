@@ -8,16 +8,17 @@
   
 <h1 style="color:red; text-align:center;">This is important!!!</h1>
 
+<button onclick="clickCookie()">Click Me!</button>
+  
 <p style="text-align:center;font-size:20px" id="cookieclicks">Clicks: 0</p>;
   
-function clickcookie() {
+<script>
+let cookies = 0
+function clickCookie() {
   cookies += 1;
   document.getElementById("cookieclicks").innerHTML = "Clicks: " + cookies.toString();
 }
-
-<button onclick="clickcookie()">Click Me!</button>
-  
-let cookies = 0
+</script>
   
 <a href="mailto:someone@example.com">Send Email</a>
   
